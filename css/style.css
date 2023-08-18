@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.navbar {
+  width: 100%;
+  display: none;
+  height: 5rem;
+}
+.navbar__items {
+  width: 50rem;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  gap: 5rem;
+}
+.navbar__items__link {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.3rem;
+  display: block;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.navbar__items__link:hover {
+  font-weight: bold;
+}
+.navbar__items__link-menuDesplegable1 {
+  width: 6rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  list-style: none;
+}
+.navbar__items__link-menuDesplegable1 li {
+  margin: 0.3rem;
+}
+.navbar__items__link-menuDesplegable2 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  list-style: none;
+}
+.navbar__items__link-menuDesplegable2 li {
+  margin: 0.3rem;
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 2rem;
+  padding-right: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 1115px) {
+  .buttons {
+    display: none;
+  }
+}
+.buttons-login {
+  border: none;
+  font-size: 1.2rem;
+}
+.buttons-login:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons-Register {
+  border-radius: 8px;
+  width: 5.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+.buttons-Register:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main__containerLeft {
+  width: 50%;
+  height: 100vh;
+}
+.main__containerLeft-contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  padding-left: 6.5rem;
+}
+.main__containerLeft-contenido-tituloPrincipal {
+  font-family: "Epilogue", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.main__containerLeft-contenido-description {
+  width: 55%;
+}
+.main__containerLeft-contenido-boton {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+}
+.main__containerLeft-contenido-boton:hover {
+  background-color: white;
+  color: black;
+}
+.main__containerLeft-contenido-images {
+  margin-top: 2rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1115px) {
+  .main__containerLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  .main__containerLeft-contenido {
+    padding: 1rem;
+    height: 62vh;
+    display: flex;
+    align-items: center;
+  }
+  .main__containerLeft-contenido-tituloPrincipal {
+    font-family: "Epilogue", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .main__containerLeft-contenido-description {
+    width: 100%;
+  }
+  .main__containerLeft-contenido-images {
+    width: 100%;
+  }
+}
+
+.main__conteinerRight {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  background-image: url(../imagenes/image-hero-desktop.png);
+  background-size: 501px 600px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1115px) {
+  .main__conteinerRight {
+    width: 100%;
+    height: 75vh;
+    background-image: url(../imagenes/image-hero-mobile.png);
+    background-size: 100% 444px;
+  }
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1115px) {
+  .header-navigation {
+    display: flex !important;
+    align-items: center;
+    height: 68px;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1115px) {
+  .header-navigation__menu {
+    display: none;
+  }
+}
+
+.navbar-movil {
+  transform: scaleX(-1);
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  height: 100vh;
+  padding: 28px 24px;
+}
+.navbar-movil__Fondo {
+  transform: scaleX(-1);
+}
+@media (min-width: 1115px) {
+  .navbar-movil__Fondo {
+    display: none;
+  }
+}
+@media (max-width: 1115px) {
+  .navbar-movil__Fondo {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+  }
+}
+.navbar-movil__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  list-style: none;
+  margin-top: 50px;
+}
+.navbar-movil__items__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-size: 1.3rem;
+}
+.navbar-movil__items__link:hover {
+  font-weight: bold;
+}
+.navbar-movil__items__link-menuDesplegable1 {
+  list-style: none;
+}
+.navbar-movil__items__link-menuDesplegable2 {
+  list-style: none;
+}
+.navbar-movil__items__link__buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.navbar-movil__items__link__buttons-login {
+  font-size: 1.1rem;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+.navbar-movil__items__link__buttons-login:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar-movil__items__link__buttons-Register {
+  font-size: 1.1rem;
+  border-radius: 8px;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+.navbar-movil__items__link__buttons-Register:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 1115px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

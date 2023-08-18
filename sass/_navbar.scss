@@ -1,0 +1,112 @@
+@use 'variable';
+
+.navbar{
+    width: 100%;
+    display: none;
+    height: 5rem;
+    &__items
+    {
+        width: 50rem;
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        gap: 5rem;
+        
+     
+        &__link
+        {
+       
+            text-decoration: none;
+            color: variable.$Black;
+            font-size: 1.3rem;
+            display: block;
+            padding-top: 10px;
+            cursor: pointer;
+            &:hover
+            {
+                font-weight: bold;
+
+            }
+            &-menuDesplegable1
+            {
+                width: 6rem;
+                background-color: white;
+                border-radius: 10px;
+                padding: 1rem;
+                list-style: none;
+
+                & li 
+                {
+                    margin: 0.3rem;
+                }
+                
+            }
+            &-menuDesplegable2
+            {
+                background-color: white;
+                border-radius: 10px;
+                padding: 1rem;
+                list-style: none;
+                
+                & li 
+                {
+                    margin: 0.3rem;
+                }
+            }
+
+            
+            
+            
+            
+        }
+        
+    }
+    @media (min-width: 1115px){
+        display: block;
+        
+    }
+    
+    
+}
+
+.buttons
+{
+    @media (max-width: 1115px)
+    {
+        display: none;
+    }
+
+    
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 2rem;
+                
+    padding-right: 1rem;
+    
+    font-weight: 700;
+
+    &-login
+    {
+        &:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        border: none;
+        font-size: 1.2rem;
+                    
+    }
+    &-Register
+    {
+        &:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        border-radius: 8px;
+        width: 5.5rem;
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+

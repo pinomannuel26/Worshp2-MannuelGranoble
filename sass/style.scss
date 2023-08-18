@@ -1,0 +1,23 @@
+@use 'navbar';
+@use 'containerLeft';
+@use 'contanerRight';
+@use 'mixins';
+@use 'header';
+@use 'navbarMovil';
+@use 'variable';
+
+body{
+    background-color: rgb(238, 238, 238) ;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    
+    @media (max-width: 1115px)
+    {
+        flex-direction: column-reverse;
+             
+    }
+   
+}

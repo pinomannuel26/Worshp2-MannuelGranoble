@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Worshop 2 SASS - profundizacion </title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="header-navigation">
+            
+            <img class="header-navigation__logo" src="imagenes/logo.svg" alt="logo">
+            <img class="header-navigation__menu" src="./imagenes/icon-menu.svg" alt="menu icon">
+            <!--Navbar version web-->
+            <nav class="navbar">
+                <ul class="navbar__items">
+                    <li><a class="navbar__items__link"  id="navbar__items__link-w1"href="#">Features <img src="imagenes/icon-arrow-down.svg" id="imgArrowF" alt="down" ></a>
+                        <ul class="navbar__items__link-menuDesplegable1">
+                            <li> <img src="imagenes/icon-todo.svg" alt="icon todoList" > Todo List</li>
+                            <li><img src="imagenes/icon-calendar.svg" alt="icon calendar" >Calendar</li>
+                            <li> <img src="imagenes/icon-reminders.svg" alt="icon Reminders" >Reminders</li>
+                            <li><img src="imagenes/icon-planning.svg" alt="icon planning" >Planning</li>
+                        </ul> 
+                    </li>
+                    <li><a class="navbar__items__link" id="navbar__items__link-w2" href="#" >Company <img src="imagenes/icon-arrow-down.svg" id="imgArrowC" alt="down" > </a>
+                        <ul class="navbar__items__link-menuDesplegable2">
+                            <li> History</li>
+                            <li>Our Team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </li>
+                    <li><a class="navbar__items__link" href="#" >Careers</a></li>
+                    <li><a class="navbar__items__link" href="#">About</a></li>
+
+                    
+                    
+                </ul>
+                
+            </nav>
+            <div class="buttons">
+                <button class="buttons-login">Login</button>
+                <button class="buttons-Register">Register</button>
+            </div>
+
+            <!--Fin Navbar version normal-->
+
+            <!--Navbar version movil-->
+            <div class="navbar-movil__Fondo">
+                <nav class="navbar-movil">
+                    
+                    <img class="navbar-movil__close-icon" src="./imagenes/icon-close-menu.svg" alt="icono de cerrar">
+                    <ul class="navbar-movil__items">
+                        <li><a class="navbar-movil__items__link" id="navbar-movil__items__link-M1" href="#">Features <img src="imagenes/icon-arrow-down.svg" id="imgArrowFM" alt="down" ></a>
+                            <ul class="navbar-movil__items__link-menuDesplegable1">
+                                <li> <img src="imagenes/icon-todo.svg" alt="icon todoList" > Todo List</li>
+                                <li><img src="imagenes/icon-calendar.svg" alt="icon calendar" >Calendar</li>
+                                <li> <img src="imagenes/icon-reminders.svg" alt="icon Reminders" >Reminders</li>
+                                <li><img src="imagenes/icon-planning.svg" alt="icon planning" >Planning</li>
+                            </ul> 
+                        </li>
+                        <li><a class="navbar-movil__items__link" id="navbar-movil__items__link-M2"href="#" >Company<img src="imagenes/icon-arrow-down.svg" id="imgArrowCM" alt="down" ></a>
+                        <ul class="navbar-movil__items__link-menuDesplegable2">
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                        </ul>
+                        </li>
+                        <li><a class="navbar-movil__items__link" href="#" >Careers</a></li>
+                        <li><a class="navbar-movil__items__link" href="#">About</a></li>
+                        <div class="navbar-movil__items__link__buttons">
+                            <button class="navbar-movil__items__link__buttons-login">Login</button>
+                            <button class="navbar-movil__items__link__buttons-Register">Register</button>
+                        </div>
+                
+                    </ul>
+                </nav>
+            </div>
+            <!--Fin Navbar version movil-->
+        </div>
+            
+    </header>
+    <main class="main">
+        <div class="">
+            <div class="main__containerLeft-contenido">
+                <h1 class="main__containerLeft-contenido-tituloPrincipal">Make remote work</h1>
+                <p class="main__containerLeft-contenido-description">
+                    Get your ream in sync, no matter your location. 
+                    Streamline processes, create team rituals, and watch productivity soar.
+                </p>
+                <button type="button" class="main__containerLeft-contenido-boton">Learn more</button>
+            
+                <div class="main__containerLeft-contenido-images">
+                    <img src="imagenes/client-databiz.svg" alt="imgDataBiz">
+                    <img src="imagenes/client-audiophile.svg" alt="imgAudipPhile">
+                    <img src="imagenes/client-meet.svg" alt="imgMeet">
+                    <img src="imagenes/client-maker.svg" alt="imgMaker">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="main__conteinerRight">
+            
+        </div>
+    </main>
+    <script type="module" src="script/script.js"></script>
+  
+</body>
+</html>
